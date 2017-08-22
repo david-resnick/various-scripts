@@ -3,10 +3,10 @@
 require 'fileutils'
 require 'set'
 
-srcdir = '/Users/davidresnick/Desktop/to-sort/batch-from-nexus-galaxy'
+srcdir = '/Users/davidresnick/Desktop/pics'
 Dir.chdir(srcdir)
-Dir.glob('{PANO}_*') do |item|
-  # VID_20120728_202223.
+Dir.glob('*') do |item|
+  # IMG_20160116_171144
   # 2015-10-08 14.20.24
   puts item
   match = /(PANO|IMG|VID)_(?<year>\d{4})(?<mon>\d{2})(?<day>\d{2})_(?<hour>\d{2})(?<min>\d{2})(?<sec>\d{2})/.match(item)
